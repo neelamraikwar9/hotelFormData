@@ -19,12 +19,12 @@ const [restaurant, setRestaurant] = useState(false)
    checkOutTime: "",
    amenities: "",
    priceRange: "",
-   reservationsNeeded: "",
-   isParkingAvailable: "",
-   isWifiAvailable: "",
-   isPoolAvailable: "",
-   isSpaAvailable: "",
-   isRestaurantAvailable: "",
+   reservationsNeeded: false,
+   isParkingAvailable: false,
+   isWifiAvailable: false,
+   isPoolAvailable: false,
+   isSpaAvailable: false,
+   isRestaurantAvailable: false,
    photos: ""
 });
 
@@ -149,7 +149,7 @@ const [restaurant, setRestaurant] = useState(false)
             <br/>
             <br/>
 
-            <label>Rating:</label>
+            <label>Rating(min is 0 and max is 5):</label>
             <br/>
             <input type="number" name="rating" value={formData.rating} onChange={handleChange}/>
             <br/>
