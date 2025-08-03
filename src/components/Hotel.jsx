@@ -5,7 +5,7 @@ const Hotel = () => {
     const {data, loading, error} = useFetch("https://hotels-data-one.vercel.app/hotels")
     // console.log(data)
 
-   const handleDelete = async (hotelId) => {
+   const handleDelete = async (hotelId) => {    
     try{
         const response = await fetch(`https://hotels-data-one.vercel.app/hotels/${hotelId}`,
             { method: "DELETE"}
